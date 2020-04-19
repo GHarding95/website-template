@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <!--<script src="https://kit.fontawesome.com/b880c63e33.js"></script> -->
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+    <title>和製漢字</title>
+  </head>
+  <body>
+
+<!--HEADER-->
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+          <img class="nav-logo" src="images/circleyingyang.png" alt="">
+        </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="bm-container">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </button>
+
+    <!--NAV LINKS-->
+
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home</a>
+          <span class="sr-only">(current)</span>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="functionality.html">Functionality</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--HOME BANNER-->
+
+<section class="home-banner home-banner-center background-image mbird-container">
+  
+    <div class="bird-container bird-container-one"><div class="bird bird-one"></div></div>
+    <div class="bird-container bird-container-two"><div class="bird bird-two"></div></div>
+    <div class="bird-container bird-container-three"><div class="bird bird-three"></div></div>
+    <div class="bird-container bird-container-four"><div class="bird bird-four"></div></div>
+    
+  <div class="home-banner-content">
+    <h1>和製漢字</h1>
+    <h3>和製漢字和製 漢字 和製漢字 和製漢字漢</h3>
+    <div class="btn-hb-container">
+      <a href="#" onclick="popup()" class="btn btn-hb">Contact Us</a>
+  </div>
+<!--CONTACT FORM POPUP-->
+
+    <div id="hb-popup" class="container display-none">
+      <div class="form-container">
+        <form action="mailto:glenharding123@gmail.com" method="post" enctype="text/plain">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name...">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+      
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="uk">UK</option>
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Your message..." style="height:150px"></textarea>
+      
+          <input class="btn form-btn-left" type="reset" value="Reset">
+          <input class="btn form-btn-right" type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!--CALL TO ACTION 1-->
+
+<section>
+  <div class="container cta tc">
+    <div class="row">
+      <div class="col-md-8">
+        <h4>和製漢字和製 漢字 和製漢字 和製漢字漢 和製漢字 和製漢字</h4>
+      </div>
+      <div class="col-md-4">
+        <a href="#" class="btn btn-cta">Click Me!</a>
+    </div>
+  </div>
+</div>
+</section>
+
+<!--SPLIT JOURNEY-->
+
+<section>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 inner-left lj-img">
+        <h2>Left Heading</h2>
+        <p>Pellentesque sagittis nisl vitae purus varius volutpat. 
+          Nulla vulputate pretium velit fringilla pharetra. Nunc accumsan massa ac fermentum ornare. 
+          Sed cursus, metus vitae facilisis pellentesque, leo diam gravida mauris, a elementum sem augue eget mauris. 
+          Maecenas eu sem feugiat, porttitor mauris aliquet, vehicula enim. Donec feugiat luctus arcu, a vestibulum libero pharetra eu. 
+        </p>
+        <a href="#" class="btn sj-btn">Find Out More</a>
+      </div>
+ 
+      <div class="col-md-6 inner-right rj-img">
+        <h2>Right Heading</h2>
+        <p>Pellentesque sagittis nisl vitae purus varius volutpat. 
+          Nulla vulputate pretium velit fringilla pharetra. Nunc accumsan massa ac fermentum ornare. 
+          Sed cursus, metus vitae facilisis pellentesque, leo diam gravida mauris, a elementum sem augue eget mauris. 
+          Maecenas eu sem feugiat, porttitor mauris aliquet, vehicula enim. Donec feugiat luctus arcu, a vestibulum libero pharetra eu. 
+        </p>
+        <a href="#" class="btn sj-btn">Find Out More</a>
+      </div>
+    </div>
+</div>
+</section>
+
+<!--SINGLE JOURNEY-->
+
+<section>
+  <div class="container-fluid single-journey tc">
+    <div class="container">
+    <h2>Single Journey</h2>
+      <p>Pellentesque sagittis nisl vitae purus varius volutpat. 
+        Nulla vulputate pretium velit fringilla pharetra. Nunc accumsan massa ac fermentum ornare. 
+        Sed cursus, metus vitae facilisis pellentesque, leo diam gravida mauris, a elementum sem augue eget mauris. 
+        Maecenas eu sem feugiat, porttitor mauris aliquet, vehicula enim. Donec feugiat luctus arcu, a vestibulum libero pharetra eu. 
+      </p>
+      <a href="#" class="btn sj-btn">Find Out More</a>
+    </div>
+  </div>
+</section>
+
+<!--CLIENTS-->
+
+<section class="bb">
+
+  <div class="container-fluid">
+    <div class="container">
+      <div id="demo" class="carousel slide p-4" data-ride="carousel">
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">			          <!-- First Slide -->
+            <div class="d-flex justify-content-around c2">			<!-- Flex Slide Box -->
+              <a href="#"><img class="rounded-circle client-img" src="images/wkf.jpg"></a>
+              <a href="#"><img class="rounded-circle client-img" src="images/ck.png"></a>
+              <a href="#"><img class="rounded-circle client-img" src="images/wikf.jpg"></a>
+              <a href="#"><img class="rounded-circle client-img" src="images/dkf.png"></a>
+            </div>
+          </div>
+
+          <div class="carousel-item">			                  <!-- Second Slide -->
+            <div class="d-flex justify-content-around c2">			<!-- Flex Slide Box -->
+              <a href="#"><img class="rounded-circle client-img" src="images/bwk.png"></a>
+              <a href="#"><img class="rounded-circle client-img" src="images/logo2.jpg"></a>
+              <a href="#"><img class="rounded-circle client-img" src="images/logo3.png"></a>
+              <a href="#"><img class="rounded-circle client-img" src="images/tk.png"></a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--CALL TO ACTION 2-->
+
+<section>
+  <div class="container cta tc">
+    <div class="row">
+      <div class="col-md-8">
+        <h4>和製漢字和製 漢字 和製漢字 和製漢字漢 和製漢字 和製漢字</h4>
+      </div>
+      <div class="col-md-4">
+        <a href="#" class="btn btn-cta">Click Me!</a>
+    </div>
+  </div>
+</div>
+</section>
+
+<!--FOOTER-->
+<footer class="pt-5">
+  <div class="container pb-4">
+    <div class="row">
+      <div class="col-md-3">
+      <!-- Contact -->
+        <h5 class="font-weight-bold text-uppercase mb-4">Contact</h5>
+
+            <p><span class="ft-icon"><img src="images/home.png"></span> Coventry, England, UK</p>
+            <a href="mailto: glenharding123@gmail.com"><p class="email"><span class="ft-icon"><img src="images/email.png"></span> glenharding123@gmail.com</p></a>
+            <a href="tel: 07784775033"><p class="tel"><span class="ft-icon"><img src="images/call.png"></span> 07784775033</p></a>
+
+      </div>
+
+        <div class="col-md-5 fl">
+
+          <!-- Useful Links -->
+          <h5 class="font-weight-bold text-uppercase mb-4">Useful Links</h5>
+  
+          <ul class="flex-space">
+            <li><a href="#" target="_blank">Link 1</a></li>
+            <li><a href="#" target="_blank">Link 2</a></li>
+            <li><a href="#" target="_blank">Link 3</a></li>
+            <li><a href="#" target="_blank">Link 4</a></li>
+          </ul>
+
+          <ul class="flex-space">
+            <li><a href="#" target="_blank">Link 5</a></li>
+            <li><a href="#" target="_blank">Link 6</a></li>
+            <li><a href="#" target="_blank">Link 7</a></li>
+            <li><a href="#" target="_blank">Link 8</a></li>
+          </ul>
+    
+        </div>
+
+      <div class="col-md-4">
+
+        <!-- Social Media -->
+        <h5 class="font-weight-bold text-uppercase mb-4">Social Media</h5>
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/" target="_blank">
+          <span class="sm-icon"><img src="images/facebook.png"></span>
+        </a>
+        <!-- Twitter -->
+        <a href="https://twitter.com/login" target="_blank">
+          <span class="sm-icon"><img src="images/twitter.png"></span>
+        </a>
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/" target="_blank">
+          <span class="sm-icon"><img src="images/instagram.png"></span>
+        </a>
+        <!-- Pinterest -->
+        <a href="https://www.pinterest.co.uk/" target="_blank">
+          <span class="sm-icon"><img src="images/pinterest.png"></span>
+        </a>
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/login?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin" target="_blank">
+          <span class="sm-icon"><img src="images/linkedin.png"></span>
+        </a>
+        <!-- Google +-->
+        <a href="https://accounts.google.com/signin/v2/identifier?passive=1209600&continue=https%3A%2F%2Faboutme.google.com%2Fu%2F0%2F%3Freferer%3Dgplus&followup=https%3A%2F%2Faboutme.google.com%2Fu%2F0%2F%3Freferer%3Dgplus&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank">
+          <span class="sm-icon"><img src="images/googleplus.png"></span>
+        </a>
+
+      </div>
+    </div>
+  </div>
+
+<!-- Copyright -->
+<div class="container-fluid copyright">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <p class="footer-cr">© <script>document.write(new Date().getFullYear())</script> Glen Harding</p>
+        <ul class="cr-links">
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+          <li><a href="#">Link 4</a></li>
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+</footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!--Custom JS-->
+    <script src="scripts.js"></script>
+
+  </body>
+</html>

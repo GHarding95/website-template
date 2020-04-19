@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b880c63e33.js"></script>
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+    <title>和製漢字</title>
+  </head>
+  <body>
+
+<!--HEADER-->
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+          <img class="nav-logo" src="images/circleyingyang.png" alt="">
+        </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="bm-container">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="gallery.html">Gallery
+                <span class="sr-only">(current)</span>
+              </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="functionality.html">Functionality</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--GALLERY-->
+
+<section class="g1 bb s1-padding">
+  <div class="container-fluid tc">
+      <h1 class="gh1">Gallery</h1>
+      <h5 class="g-sh">Click on the images below:</h5>
+  </div>
+
+  <div class="container" style="display: none;">
+    <img id="expandedImg" class="fade-in" onclick="this.parentElement.style.display='none'">
+    <h4 id="imgtext">
+</div>
+  
+  <div class="container-fluid tc">
+    <div class="ibb g-col">
+      <img class="img-responsive" src="images/jap3.jpg" alt="Daishogun-Hachijinja Shrine" onclick="myFunction(this);">
+    </div>
+    <div class="ibb g-col">
+      <img class="img-responsive" src="images/jap5.jpg" alt="Spring" onclick="myFunction(this);">
+    </div>
+    <div class="ibb g-col">
+      <img class="img-responsive" src="images/shaolin.jpg" alt="Shaolin" onclick="myFunction(this);">
+    </div>
+    <div class="ibb g-col">
+      <img class="img-responsive" src="images/jap6.jpg" alt="Cherry Blossom" onclick="myFunction(this);">
+    </div>
+    <div class="ibb g-col">
+        <img class="img-responsive" src="images/jap8.jpg" alt="Village" onclick="myFunction(this);">
+    </div>
+    <div class="ibb g-col">
+        <img class="img-responsive" src="images/jap9.jpg" alt="Mountain" onclick="myFunction(this);">
+    </div>
+    <div class="ibb g-col">
+        <img class="img-responsive" src="images/jap12.jpg" alt="Garden" onclick="myFunction(this);">
+    </div>
+    <div class="ibb g-col">
+        <img class="img-responsive" src="images/jap11.jpg" alt="Castle" onclick="myFunction(this);">
+    </div>
+  </div>
+
+</section>
+
+<!--VIDEO GALLERY-->
+
+<section class="g1">
+    <div class="container-fluid tc">
+        <h1 class="gh">Video Gallery</h1>
+    </div>
+
+<!--Carousel Wrapper-->
+<div id="video-carousel-example" class="container-fluid carousel slide carousel-fade tc" data-ride="carousel">
+  <!--Indicators-->
+  <ol class="carousel-indicators">
+    <li data-target="#video-carousel-example" data-slide-to="0" class="active"></li>
+    <li data-target="#video-carousel-example" data-slide-to="1"></li>
+    <li data-target="#video-carousel-example" data-slide-to="2"></li>
+  </ol>
+  <!--/.Indicators-->
+  <!--Slides-->
+  <div class="carousel-inner" role="listbox">
+    <div class="carousel-item active">
+      <video loop autoplay muted playsinline width='100%' height='100%' class="video-fluid">
+        <source src="https://mdbootstrap.com/img/video/Tropical.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="carousel-item">
+      <video loop autoplay muted playsinline width='100%' height='100%' class="video-fluid">
+        <source src="https://mdbootstrap.com/img/video/forest.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="carousel-item">
+      <video loop autoplay muted playsinline width='100%' height='100%' class="video-fluid">
+        <source src="https://mdbootstrap.com/img/video/Agua-natural.mp4" type="video/mp4" />
+      </video>
+    </div>
+  </div>
+  <!--/.Slides-->
+  <!--Controls-->
+  <a class="video-carousel-control-prev" href="#video-carousel-example" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="video-carousel-control-next" href="#video-carousel-example" role="button" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  <!--/.Controls-->
+</div>
+<!--Carousel Wrapper-->
+
+</section>
+
+<!--FOOTER-->
+<footer class="pt-5">
+  <div class="container pb-4">
+    <div class="row">
+      <div class="col-md-3">
+      <!-- Contact -->
+        <h5 class="font-weight-bold text-uppercase mb-4">Contact</h5>
+
+            <p><span class="ft-icon"><img src="images/home.png"></span> Coventry, England, UK</p>
+            <a href="mailto: glenharding123@gmail.com"><p class="email"><span class="ft-icon"><img src="images/email.png"></span> glenharding123@gmail.com</p></a>
+            <a href="tel: 07784775033"><p class="tel"><span class="ft-icon"><img src="images/call.png"></span> 07784775033</p></a>
+
+      </div>
+
+        <div class="col-md-5 fl">
+
+          <!-- Useful Links -->
+          <h5 class="font-weight-bold text-uppercase mb-4">Useful Links</h5>
+  
+            <ul class="flex-space">
+                <li><a href="#" target="_blank">Link 1</a></li>
+                <li><a href="#" target="_blank">Link 2</a></li>
+                <li><a href="#" target="_blank">Link 3</a></li>
+                <li><a href="#" target="_blank">Link 4</a></li>
+              </ul>
+
+              <ul class="flex-space">
+                <li><a href="#" target="_blank">Link 5</a></li>
+                <li><a href="#" target="_blank">Link 6</a></li>
+                <li><a href="#" target="_blank">Link 7</a></li>
+                <li><a href="#" target="_blank">Link 8</a></li>
+              </ul>
+    
+        </div>
+
+      <div class="col-md-4">
+
+        <!-- Social Media -->
+        <h5 class="font-weight-bold text-uppercase mb-4">Social Media</h5>
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/" target="_blank">
+          <span class="sm-icon"><img src="images/facebook.png"></span>
+        </a>
+        <!-- Twitter -->
+        <a href="https://twitter.com/login" target="_blank">
+          <span class="sm-icon"><img src="images/twitter.png"></span>
+        </a>
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/" target="_blank">
+          <span class="sm-icon"><img src="images/instagram.png"></span>
+        </a>
+        <!-- Pinterest -->
+        <a href="https://www.pinterest.co.uk/" target="_blank">
+          <span class="sm-icon"><img src="images/pinterest.png"></span>
+        </a>
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/login?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin" target="_blank">
+          <span class="sm-icon"><img src="images/linkedin.png"></span>
+        </a>
+        <!-- Google +-->
+        <a href="https://accounts.google.com/signin/v2/identifier?passive=1209600&continue=https%3A%2F%2Faboutme.google.com%2Fu%2F0%2F%3Freferer%3Dgplus&followup=https%3A%2F%2Faboutme.google.com%2Fu%2F0%2F%3Freferer%3Dgplus&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank">
+          <span class="sm-icon"><img src="images/googleplus.png"></span>
+        </a>
+
+      </div>
+    </div>
+  </div>
+
+<!-- Copyright -->
+<div class="container-fluid copyright">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <p class="footer-cr">© <script>document.write(new Date().getFullYear())</script> Glen Harding</p>
+        <ul class="cr-links">
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+          <li><a href="#">Link 4</a></li>
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+</footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!--Custom JS-->
+    <script src="scripts.js"></script>
+
+  </body>
+</html>
