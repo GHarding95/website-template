@@ -189,6 +189,8 @@ footer li a{
 
 footer .email:hover, footer .tel:hover{
   transform: scale(1.1);
+  color: #cc0000;
+  font-weight: 600;
 }
 
 .email, .tel, .city{
