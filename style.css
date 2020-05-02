@@ -891,6 +891,10 @@ a.carousel-control-prev, a.carousel-control-next {
   opacity: 1;
 }
 
+.carousel-indicators{
+  padding-bottom: 20px;
+}
+
 .carousel-indicators li{
   background-color: #cc0000;
 }
